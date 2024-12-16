@@ -6,5 +6,5 @@ links/references
 
 
 (?)  0006D890|0046D890  	-	moveCatapultProjectile	(???) 								- moves projectiles of catapult type
-(!)	 0006D490|0046D490		-	movePeaProjectile		(???)								- moves projectiles of pea type       
+(!)	 0006D490|0046D490		-	movePeaProjectile		(???)								      - moves projectiles of pea type       
 
