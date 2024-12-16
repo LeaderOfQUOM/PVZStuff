@@ -51,15 +51,15 @@ registers:
 eax: ???  
 ebx: projModifier  
 
-instructions, that modify registers contains value, that this register will have after execution  
+* instructions, that modify registers contains value, that this register will have after execution  
 example (1312D0):  
 mov eax,[esp+14]		comment:	eax: projModifier  
 
-jmp/jne and other jump instructions will have a condition in which jump occurse, written in pseudocode, and optional human readable explanation next to it  
+* jmp/jne and other jump instructions will have a condition in which jump occurse, written in pseudocode, and optional human readable explanation next to it  
 example:  
 cpm eax,ecx
 jne 00457000				comment:	if(projModifier != 4)	checks if damage type is not freezing  
 
-instruction, that call functions contain name of this function, from my documentation  
+* instruction, that call functions contain name of this function, from my documentation  
 example(imagined):  
 call 000623118			comment:	spawnZombie()  
