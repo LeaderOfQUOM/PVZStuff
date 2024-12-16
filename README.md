@@ -1,5 +1,5 @@
 # PVZStuff
-PVZStuff... what you extecting, huh?
+PVZStuff... what you expecting, huh?
 Also, the formatting is a bit broken, so it is better to read in raw (button in up right corner),
 even though i edited it in notepad++ with plain text with CRLF
 idk the reason, will try to fix in next few days
