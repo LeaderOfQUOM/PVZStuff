@@ -23,8 +23,7 @@ prefixes before line means degree on confidence:
 	  
 if variable / functions is named undecided than... well, i hasn't decided it yet ?\_(?)_/? (it was meant to be this smile: https://memepedia.ru/wp-content/uploads/2017/05/Shrug-Emoticon-dunno-lol.jpg)  
 
---------------------------------------------------------------------------------------------------
-CE table comments conventions:  
+# CE table comments conventions:  
 
 ATTENTION!!! CE table ONLY work with files named "PlantsVsZombies.exe". If you want to change that, than you need to open ce table file in text redactor, and change all strings "PlantsVsZombies.exe" to what you need  
 same stuff with prefixes  
