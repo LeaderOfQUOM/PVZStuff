@@ -5,8 +5,8 @@ small details of work
 links/references
 
 
-(?)  0006D890|0046D890  	-	moveCatapultProjectile	(???) 								- moves projectiles of catapult type
-(!)	 0006D490|0046D490		-	movePeaProjectile		(???)								   - moves projectiles of pea type
-(!)  001312D0|005312D0    - hitArmorLessZombie(projModifier, projDMG, zombieStruct*)                       process damage to armorless zombie from projectile
+* (?)  0006D890|0046D890  	-	moveCatapultProjectile	(???) 								- moves projectiles of catapult type
+* (!)	 0006D490|0046D490		-	movePeaProjectile		(???)								   - moves projectiles of pea type
+* (!)  001312D0|005312D0    - hitArmorLessZombie(projModifier, projDMG, zombieStruct*)                       process damage to armorless zombie from projectile
 all arguments via pushing to stack
-  
+working if calling from independent place of code  
