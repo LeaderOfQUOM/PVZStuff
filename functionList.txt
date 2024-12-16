@@ -10,5 +10,5 @@ links/references
 (!)  001312D0|005312D0    - hitArmorlessZombie(projModifier, projDMG, zombieStruct*)                       process damage to armorless zombie from projectile
 all arguments via pushing to stack
 atomaric - working if calling from independent place of code  
-(??) 001317С0|005317C0    - hitZombie(???)  - um... seems to hit zombie, but i am not sure, maybe it also does something else with it, cause it checks for lots of zombie states
+(??) 001317С0|005317C0    - hitZombie(???)  - um... seems to hit zombie, but i am not sure, maybe it also does something else with it, cause it checks for lots of zombie states, or it is just processing zombie behaviour
 
