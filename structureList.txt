@@ -9,7 +9,7 @@ notes
 
 
 zombieStruct:
-008(8)	  -		x					- The zombies x value																	| ???
+008(8)    -		x					- The zombies x value																	| ???
 00C(12)   -  	y 					- The zombies y value (not float) 														| ???
 020(32)   -    	layer 				- The layer that the zombie is on 														| ???
 024(36)   -  	type 				- Zombie type 																			| ???
