@@ -8,6 +8,7 @@
 * functionList - list of functions, with their adresses, arguments, and a brief description / details of work  
 * structureList - list of structures , that are dynamically creating when game runs, like zombie offsets from mod doc. also contains offsets
 * idList - selfexplanatory, it is various IDs, like zombie types from zombieStruct, and similar stuff
+* variableList - list of Variables, used by functions, and their meaning. Often they are self explanatory, but let it be, just in case
 * Scripts - well, my scripts (btw, would be grateful for credit)
 * Readme - very cool must read file  
 
