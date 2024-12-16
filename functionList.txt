@@ -10,12 +10,12 @@ tag atomaric means, that function works, and not crashes when calling from any p
 
 (!)	 0006D490|0046D490		-	movePeaProjectile		(???)								   - moves projectiles of pea type
 
-(!)  001312D0|005312D0    - hitArmorlessZombie(projModifier, projDMG, zombieStruct*)                       process damage to armorless zombie from projectile
+(!)  001312D0|005312D0    - hitArmorlessZombie(DMGTrait, DMG, zombieStruct*)                       process damage to armorless zombie
 all arguments via pushing to stack
 atomaric - working if calling from independent place of code  
 
-(!)  00130FE0|00530FE0    - hitArmoredZombie    (zombieStruct*, projDMG)
-zombieStruct* via push, projDMG in eax
+(!)  00130FE0|00530FE0    - hitArmoredZombie    (zombieStruct*, DMG)                                   process damage to armored zombie
+zombieStruct* via push, DMG in eax
 atomaric
 
 (??) 001317С0|005317C0    - hitZombie(???)  - um... seems to hit zombie, but i am not sure, maybe it also does something else with it, cause it checks for lots of zombie states, or it is just processing zombie behaviour
