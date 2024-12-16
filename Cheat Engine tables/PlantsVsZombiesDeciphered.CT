@@ -15,7 +15,58 @@
       <VariableType>4 Bytes</VariableType>
       <Address>1577B950+C8</Address>
     </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>1577A0D8+D0</Address>
+    </CheatEntry>
   </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Change of ret </Description>
+      <AddressString>PlantsVsZombies.exe+3A4020</AddressString>
+      <Before>
+        <Byte>D8</Byte>
+        <Byte>FF</Byte>
+        <Byte>61</Byte>
+        <Byte>C3</Byte>
+        <Byte>61</Byte>
+      </Before>
+      <Actual>
+        <Byte>C3</Byte>
+      </Actual>
+      <After>
+        <Byte>90</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of popad </Description>
+      <AddressString>PlantsVsZombies.exe+3A401F</AddressString>
+      <Before>
+        <Byte>CF</Byte>
+        <Byte>D8</Byte>
+        <Byte>FF</Byte>
+        <Byte>61</Byte>
+        <Byte>C3</Byte>
+      </Before>
+      <Actual>
+        <Byte>61</Byte>
+      </Actual>
+      <After>
+        <Byte>90</Byte>
+        <Byte>90</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
   <UserdefinedSymbols/>
   <Comments>Info about this table:
 </Comments>
@@ -115,7 +166,7 @@ registers:
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+130953</Address>
-      <Comment>esi: projModifier and 8
+      <Comment>esi: DMGTrait and 8
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -274,11 +325,11 @@ eax(31): zombieArmorMaxHP sign
       <Comment>HitArmorlessZombie()
 
 Стек:
-+C   projModifier
++C   DMGTrait
 +4    zombieStruct
 ---------------------
--8     projModifier and 8
--C    projModifier
+-8     DMGTrait and 8
+-C    DMGTrait
 -10   projID
 -14   zombieStruct
 (?)-18 zombieStructArray   
@@ -287,12 +338,12 @@ esp -8
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312D3</Address>
-      <Comment>eax: projModifier
+      <Comment>eax: DMGTrait
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312D7</Address>
-      <Comment>ebx: projModifier
+      <Comment>ebx: DMGTrait
 esp -C
 </Comment>
     </DisassemblerComment>
@@ -315,7 +366,7 @@ esp: -14
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312DE</Address>
-      <Comment>esi: projModifier
+      <Comment>esi: DMGTrait
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -336,7 +387,7 @@ esp -18
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312E8</Address>
-      <Comment>if (projModifier == damageToHeadlessFromTime | (ещё что то, не уверен))
+      <Comment>if (DMGTrait == damageToHeadlessFromTime | (ещё что то, не уверен))
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -346,7 +397,7 @@ esp -18
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312F3</Address>
-      <Comment>if ((projModifier / 4) % 2 != 0) судя по ID проджектайлов работает на всём кроме морозном горохе и морозопульте
+      <Comment>if ((DMGTrait / 4) % 2 != 0) судя по ID проджектайлов работает на всём кроме морозном горохе и морозопульте
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -400,13 +451,33 @@ esp -18
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131804</Address>
+      <Comment>if (zombie state != 4A baloonPopped)    if baloon isn't popped 
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+131861</Address>
       <Comment>if (zombieStruct.armorType == 0)    if zombie has no armor
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131863</Address>
+      <Comment>//esi: zombieStruct*
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131864</Address>
+      <Comment>//eax: projDMG
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131866</Address>
+      <Comment>hitArmoredZombie(zombieStruct*=esi, projDMG = eax, ebp)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+131872</Address>
-      <Comment>hitArmorLessZombie(projModifier=ebx, projDMG=eax, zombieStruct*=esi)
+      <Comment>hitArmorLessZombie(DMGTrait=ebx, projDMG=eax, zombieStruct*=esi)
 </Comment>
     </DisassemblerComment>
   </DisassemblerComments>
