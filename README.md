@@ -13,10 +13,6 @@ prefixes before line means degree on confidence:
 	  
 if variable / functions is named undecided than... well, i hasn't decided it yet ?\_(?)_/? (it was meant to be this smile: https://memepedia.ru/wp-content/uploads/2017/05/Shrug-Emoticon-dunno-lol.jpg)
 
-
-
-
-
 --------------------------------------------------------------------------------------------------
 CE table comments conventions:
 
