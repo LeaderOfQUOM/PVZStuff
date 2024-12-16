@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>160AF6D8+30</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>02679DA0+000007F8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>1605C81C+C8</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>1605C968+142</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"No description"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>1605D130+28</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <DisassemblerComments>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+16FB3</Address>
+      <Comment>eax: plantStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1C4C1</Address>
+      <Comment>ebx: projectile or zombie x, maybe also some other things
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1C4FE</Address>
+      <Comment>ecx = projX - 40
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1C51F</Address>
+      <Comment>if (laneOffset &gt;= 8) laneOffset = 8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+65040</Address>
+      <Comment>Stack:
+
+esp -4
+Registers:
+(?)eax plantStruct
+(?)ebx plantStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+65AB5</Address>
+      <Comment>eax: lane
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+65AB8</Address>
+      <Comment>ecx: lane offset
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+65ABC</Address>
+      <Comment>esi: plant type
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+672B5</Address>
+      <Comment>edx: lane
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6C730</Address>
+      <Comment>stack:
+esp -4
+registers:
+(?)eax: lane
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6C73F</Address>
+      <Comment>(?)esi: lane
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6C74E</Address>
+      <Comment>eax: plant offset on lane
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6CE85</Address>
+      <Comment>ebp: projPointer
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6D885</Address>
+      <Comment>projStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6D886</Address>
+      <Comment>ebp: ??? pointer, [ebp+8] is projStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6D89A</Address>
+      <Comment>ebx: projStruct
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+6D89D</Address>
+      <Comment>eax: trajectoryType
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130953</Address>
+      <Comment>esi: projModifier and 8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130954</Address>
+      <Comment>edi: unk1
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130955</Address>
+      <Comment>esi: zombieStruct2
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FE0</Address>
+      <Comment>Обработка урона по броне
+Стэк:
+
+esp -4
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FE4</Address>
+      <Comment>esp -8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FE5</Address>
+      <Comment>ebp: zombieStruct2
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FE9</Address>
+      <Comment>esp -C
+
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FEA</Address>
+      <Comment>esp-10
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FEB</Address>
+      <Comment>esi: projDamage
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FF6</Address>
+      <Comment>edi: zombieArmorMaxHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+130FFC</Address>
+      <Comment>ecx: zombieArmorHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131009</Address>
+      <Comment>eax: ~zombieArmorMaxHP / 3
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13100B</Address>
+      <Comment>eax(0-30): 0
+eax(31): zombieArmorMaxHP sign
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13100E</Address>
+      <Comment>eax: zombieArmorHP + zombieArmorMaxHP sign
+
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131010</Address>
+      <Comment>ecx: zombieArmorHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131012</Address>
+      <Comment>if (zombieArmorHP &gt;= zombieArmorMaxHP * 0.33)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13101E</Address>
+      <Comment>edx: 2 * zombieArmorMaxHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131026</Address>
+      <Comment>edx: ~zombieMaxArmorHP * 0.66
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13102D</Address>
+      <Comment>//eax: zombieArmorMaxHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13102F</Address>
+      <Comment>//edx: 0
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131031</Address>
+      <Comment>//?cmp zombieArmorHP ~zombieArmorMaxHP * 0.66
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13103C</Address>
+      <Comment>eax: zombieArmorHP
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13103E</Address>
+      <Comment>if (zombieArmorHP &lt; projDMG)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131040</Address>
+      <Comment>//eax: projDMG
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131044</Address>
+      <Comment>ecx: zombieArmorHP - calculatedDMG
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131046</Address>
+      <Comment>wtf is ebx at this point?
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131053</Address>
+      <Comment>if (bl != 4)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131066</Address>
+      <Comment>if (zombieArmorHP != 0)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+13108F</Address>
+      <Comment>if (zombieArmorHP &gt;= aombieArmorMaxHP * 0.33)
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1310B0</Address>
+      <Comment>//edi: flags cmp zombieArmorHP ~zombieArmorMaxHP * 0.66
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312D0</Address>
+      <Comment>Обработка урона по зондби без брони
+
+Стек:
++C   projModifier
++4    zombieStruct2
+---------------------
+-4     projModifier and 8
+-C    projModifier
+-10   projID
+-14   zombieStruct2
+-18   unk1
+esp -8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312D3</Address>
+      <Comment>eax: projModifier
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312D7</Address>
+      <Comment>ebx: projModifier
+esp -C
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312D8</Address>
+      <Comment>ebx: projID тип снаряда
+esp -10
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312D9</Address>
+      <Comment>ebp: zombieStruct2
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312DD</Address>
+      <Comment>esi: zombieStruct2
+esp: -14
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312DE</Address>
+      <Comment>esi: projModifier
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312E0</Address>
+      <Comment>esi: projModifer and 8
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312E3</Address>
+      <Comment>edi: unk1
+esp -18
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312E4</Address>
+      <Comment>esp -18
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312E8</Address>
+      <Comment>if (projModifier == урон по безголовым | (ещё что то, не уверен))
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312EA</Address>
+      <Comment>zombieStruct + 54|84 = 19|25
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312F3</Address>
+      <Comment>if ((projModifier / 4) % 2 != 0) судя по ID проджектайлов работает на всём кроме морозном горохе и морозопульте
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312F5</Address>
+      <Comment>//esp: -1C
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312F7</Address>
+      <Comment>//eax: zombieStruct2
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1312F9</Address>
+      <Comment>(?) Обрабатывает морозные выстрелы
+</Comment>
+    </DisassemblerComment>
+  </DisassemblerComments>
+</CheatTable>
