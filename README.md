@@ -2,13 +2,18 @@
 PVZStuff... what you expecting, huh?  
 
 
-Structure of readme:  
-repository structure  
-general conventions  
+# Structure of readme:  
+Repository structure  
+General conventions  
 Cheat Engine tables and comments conventions  
 
 # Repository structure  
 CE tables - saves of CE tables with explanations of assembly code / functions / stack state, and etc in comments  
+functionList - list of functions, with their adresses, arguments, and a brief description / details of work  
+structureList - list of structures , that are dynamically creating when game runs, like zombie offsets from mod doc. als contains offsets  
+Readme - very cool must read file  
+
+# General Conventions
 prefixes before line means degree on confidence:  
 (???) - absolutely don't know  
 (??)  - vague theories with vague evidences  
