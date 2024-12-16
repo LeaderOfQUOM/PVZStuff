@@ -6,7 +6,8 @@
 # Repository structure  
 * CE tables - saves of CE tables with explanations of assembly code / functions / stack state, and etc in comments  
 * functionList - list of functions, with their adresses, arguments, and a brief description / details of work  
-* structureList - list of structures , that are dynamically creating when game runs, like zombie offsets from mod doc. also contains offsets  
+* structureList - list of structures , that are dynamically creating when game runs, like zombie offsets from mod doc. also contains offsets
+* idList - selfexplanatory, it is various IDs, like zombie types from zombieStruct, and similar stuff
 * Readme - very cool must read file  
 
 # General Conventions
