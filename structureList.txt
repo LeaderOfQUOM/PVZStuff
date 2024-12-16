@@ -1,11 +1,12 @@
 Example of format:
 
-structureName{
+structureName:
 (levelOfConfidence)hexOffset(DecimalOffset) - NameInDocumentation - description | type		links:
 (levelOfConfidence)hexOffset(DecimalOffset) - NameInDocumentation - description | type		links:
 ...
+probable distance between adjacent structures
 notes
-}
+
 
 zombieStruct:
 008(8)	  -		x					- The zombies x value																	| ???
@@ -31,15 +32,16 @@ zombieStruct:
 0D4(212)  -		zombieArmorMaxHP 	- max HP of zombie armor																| ???
 0EC(236)  -  	Destroys zombie		- flag for game to destroy zombie														| ???
 11C(284)  -  	Zombie size																									| ???
-
+offset: ???
 
 Projectile:
 30(48)    - x 						- x position 																			| float
 (?)44(68) - y						- y position 																			| float
 (!)58(88) - undecided				- trajectoryType or maybe just projectileType											| ???
-
+Offset
 plant:
 04 (04)   -		undecided ??? strange pointer
 1C (28)   - 	lane				- lane on which it is planted															| ???
 28 (30)   - 	plantOffset			- offset on this lane in tiles (from 1 to 8)											| ???
+offset: 14C or divisor of 14C
 
