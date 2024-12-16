@@ -1,6 +1,7 @@
 # PVZStuff
 PVZStuff... what you extecting, huh?
-
+Also, the formatting is a bit broken, even though i edited it in notepad++ with plain text with CRLF
+idk the reason, will try to fix in next few days
 
 prefixes before line means degree on confidence:
 (???) - absolutely don't know
