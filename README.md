@@ -1,7 +1,3 @@
-# PVZStuff  
-PVZStuff... what you expecting, huh?  
-(Also, formatting of txt files is broken for some reason. Will try to fix it later)
-
 # Structure of readme:  
 * Repository structure  
 * General conventions  
