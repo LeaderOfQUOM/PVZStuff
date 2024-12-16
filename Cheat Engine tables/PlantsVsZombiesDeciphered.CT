@@ -5,39 +5,20 @@
       <ID>0</ID>
       <Description>"No description"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Float</VariableType>
-      <Address>160AF6D8+30</Address>
+      <VariableType>4 Bytes</VariableType>
+      <Address>15779F7C+C8</Address>
     </CheatEntry>
     <CheatEntry>
       <ID>1</ID>
       <Description>"No description"</Description>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>02679DA0+000007F8</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>2</ID>
-      <Description>"No description"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1605C81C+C8</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>3</ID>
-      <Description>"No description"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1605C968+142</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>4</ID>
-      <Description>"No description"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>1605D130+28</Address>
+      <Address>1577B950+C8</Address>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
   <DisassemblerComments>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+16FB3</Address>
@@ -144,7 +125,7 @@ registers:
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+130955</Address>
-      <Comment>esi: zombieStruct2
+      <Comment>esi: zombieStruct
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -162,7 +143,7 @@ esp -4
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+130FE5</Address>
-      <Comment>ebp: zombieStruct2
+      <Comment>ebp: zombieStruct
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -290,17 +271,17 @@ eax(31): zombieArmorMaxHP sign
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312D0</Address>
-      <Comment>Обработка урона по зондби без брони
+      <Comment>HitArmorlessZombie()
 
 Стек:
 +C   projModifier
-+4    zombieStruct2
++4    zombieStruct
 ---------------------
--4     projModifier and 8
+-8     projModifier and 8
 -C    projModifier
 -10   projID
--14   zombieStruct2
--18   unk1
+-14   zombieStruct
+(?)-18 zombieStructArray   
 esp -8
 </Comment>
     </DisassemblerComment>
@@ -323,12 +304,12 @@ esp -10
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312D9</Address>
-      <Comment>ebp: zombieStruct2
+      <Comment>ebp: zombieStruct
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312DD</Address>
-      <Comment>esi: zombieStruct2
+      <Comment>esi: zombieStruct
 esp: -14
 </Comment>
     </DisassemblerComment>
@@ -344,7 +325,7 @@ esp: -14
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312E3</Address>
-      <Comment>edi: unk1
+      <Comment>(?)edi: zombieStructArray
 esp -18
 </Comment>
     </DisassemblerComment>
@@ -355,7 +336,7 @@ esp -18
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312E8</Address>
-      <Comment>if (projModifier == урон по безголовым | (ещё что то, не уверен))
+      <Comment>if (projModifier == damageToHeadlessFromTime | (ещё что то, не уверен))
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
@@ -375,12 +356,57 @@ esp -18
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312F7</Address>
-      <Comment>//eax: zombieStruct2
+      <Comment>//eax: zombieStruct
 </Comment>
     </DisassemblerComment>
     <DisassemblerComment>
       <Address>"PlantsVsZombies.exe"+1312F9</Address>
       <Comment>(?) Обрабатывает морозные выстрелы
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317D0</Address>
+      <Comment>if (zombieStruct.state == 10) if it is immobile, but invicible to not exploding projectiles
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317DD</Address>
+      <Comment>if (zombieStruct.kill  != 0)    if zombie needs to be killed
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317E6</Address>
+      <Comment>if (zombieStruct.State == 1 death)    if zombie state is death
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317EF</Address>
+      <Comment>if (zombieStruct.State == 2 blackening)    if zombie becomes black
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317F8</Address>
+      <Comment>if (zombieStruct.State == 3 instantDeath)    if zombie state is instant death
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317FD</Address>
+      <Comment>eax: projDMG
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+1317FF</Address>
+      <Comment>if (zombieStruct.state == 49 flying)    if zombie is flying
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131861</Address>
+      <Comment>if (zombieStruct.armorType == 0)    if zombie has no armor
+</Comment>
+    </DisassemblerComment>
+    <DisassemblerComment>
+      <Address>"PlantsVsZombies.exe"+131872</Address>
+      <Comment>hitArmorLessZombie(projModifier=ebx, projDMG=eax, zombieStruct*=esi)
 </Comment>
     </DisassemblerComment>
   </DisassemblerComments>
