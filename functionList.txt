@@ -12,7 +12,7 @@ tag atomaric means, that function works, and not crashes when calling from any p
 
 (!)  001312D0|005312D0    - hitArmorlessZombie(DMGTrait, DMG, zombieStruct*)                       process damage to armorless zombie
 all arguments via pushing to stack
-atomaric - working if calling from independent place of code  
+atomaric
 
 (!)  00130FE0|00530FE0    - hitArmoredZombie    (zombieStruct*, DMG)                                   process damage to armored zombie
 zombieStruct* via push, DMG in eax
