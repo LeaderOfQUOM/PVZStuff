@@ -36,7 +36,7 @@ Stack:
 +C   projModifier
 +4    zombieStruct2
 ---------------------
--4     projModifier and 8
+-4     projModifier and 8\n
 -C    projModifier
 -10   projID
 -14   zombieStruct2
