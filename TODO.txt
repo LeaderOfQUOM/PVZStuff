@@ -1,0 +1,1 @@
+1. fix stack headers of some functions (i were wrongly offseted it by 4, so, actually arguments should start from esp +0)
