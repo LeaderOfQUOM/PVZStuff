@@ -36,7 +36,7 @@ call 00624500
 push ebx			comment:	esp -4  
 
 * comment of instruction at the start of a function contains data of what variables were in stack, and what were in registers (esp is relative to its value at function call)  
-example on real function (1312D0 - damage to zombie with armor):  
+example on real function comment (1312D0 - damage to zombie with armor):  
 Calculation of damage if zombie has armor  
 Stack:  
 +C   projModifier  
