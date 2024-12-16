@@ -17,8 +17,8 @@
 (???) - absolutely don't know  
 (??)  - vague theories with vague evidences  
 (?)   - function/variable purpose is known, but with vague details  
-(!)	  - both function/variable purpose and mechanism of work is known, but missing some details  
-	  - function/variable is almost fully known, very low doubts and uncertainty  
+(!)   - both function/variable purpose and mechanism of work is known, but missing some details
+      - function/variable is almost fully known, very low doubts and uncertainty  
 	  
 * if variable / functions is named undecided than... well, i hasn't decided it yet ?\_(?)_/? (it was meant to be this smile: https://memepedia.ru/wp-content/uploads/2017/05/Shrug-Emoticon-dunno-lol.jpg)  
 
