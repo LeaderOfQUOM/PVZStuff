@@ -14,8 +14,8 @@ zombieStruct:
 020(32)   -   layer 				- The layer that the zombie is on 														| ???
 024(36)   -  	type 				- Zombie type 																			| ???
 028(40)   -  	state 				- Zombie State (refer to Zombie States) 												| ???
-02C(44)   -		x_Float 			- The zombies x value																	| ???
-030(48)   -	  	y_Float  			- The zombies y value																	| ???
+02C(44)   -   x_Float 			- The zombies x value																	| ???
+030(48)   -   y_Float  			- The zombies y value																	| ???
 034(52)   - 	speed    			- Zombie speed (aka how fast the zombie travels)										| ???
 051(81)   -  	isEating 			- determines if the zombie is eating 1, is yes, 0 is no (byte)							| byte
 0AC(172)  -  	Decelerate 			- Decelerate																			| ???
