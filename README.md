@@ -1,6 +1,13 @@
 # PVZStuff  
 PVZStuff... what you expecting, huh?  
 
+Structure of readme:  
+repository structure  
+general conventions  
+Cheat Engine tables and comments conventions  
+
+
+
 prefixes before line means degree on confidence:  
 (???) - absolutely don't know  
 (??)  - vague theories with vague evidences  
