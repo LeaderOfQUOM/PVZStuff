@@ -1,0 +1,11 @@
+Empty for now >:)
+lol, not empty anymore)
+
+DMGTrait - trait of DMG, 
+0 - no trait, like a regular pea
+1 - act like a DMG from catapult
+2 - DMG on area
+4 - freeze zombie, like ice pea shooter
+6 - freezing melon-pult
+9 - time based DMG on headless
+33(21) - DMG brom bottom like from spikes
