@@ -8,6 +8,7 @@ general conventions
 Cheat Engine tables and comments conventions  
 
 # Repository structure  
+CE tables - saves of CE tables with explanations of assembly code / functions / stack state, and etc in comments  
 prefixes before line means degree on confidence:  
 (???) - absolutely don't know  
 (??)  - vague theories with vague evidences  
