@@ -39,11 +39,12 @@ push ebx			comment:	esp -4
 example on real function comment (1312D0 - damage to zombie with armor):  
 Calculation of damage if zombie has armor  
 Stack:  
-+C   projModifier  
++C    DMGModifier
++8    DMG  
 +4    zombieStruct2  
--4     projModifier and 8  
--C    projModifier  
--10   projID  
+-4    DMGModifier and 8  
+-C    DMGModifier  
+-10   DMG  
 -14   zombieStruct2  
 -18   unk1  
 esp -8  
@@ -62,4 +63,4 @@ jne 00457000				comment:	if(projModifier != 4)	checks if damage type is not free
 
 * instruction, that call functions contain name of this function, from my documentation  
 example(imagined):  
-call 000623118			comment:	spawnZombie()  
+call 000623118			comment:	spawnZombie(type=eax, speed=ebx)  
