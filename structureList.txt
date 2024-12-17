@@ -58,5 +58,6 @@ can be found by planting plant, and debugging at breakpoint on 00065161|00465161
 
 (??)mainArray:
 finally i found it! It contains many structures, like pointer to plants, and zombies array, and much more
-can be found be debugging on 41C95C, in edx
+can be found be debugging on 0041C95C, in edx
+also, during start of the level it is an argument, and lying in stack in function 00407B79
 will describe and write it a bit later)
