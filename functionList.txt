@@ -26,4 +26,8 @@ atomaric
 
 (??) 0001C950|0041C950    - undecided(???)  - Seems to be something utilitarian, related to painting textures on screen, and it is also being used by whole 100+ different functions!
 
+(??) 00016FAC|00416FAC    - undecided(???)  - closely related to drawing objects on screen.
+eax takes in what is drawing
+eax values: 2 - zombie, 5 - plant 14(20) - lawnmower,
+
 
