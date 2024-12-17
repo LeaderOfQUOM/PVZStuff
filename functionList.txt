@@ -7,9 +7,9 @@ links/references
 tag atomaric means, that function works, and not crashes when calling from any place of code, so it is independent and atomaric
 tag jmp means, that function is acessed with, instead of regular call.
 
-(?)  0006D890|0046D890  	-	moveCatapultProjectile	(???) 								- moves projectiles of catapult type
+(?)  0006D890|0046D490  	-	moveCatapultProjectile	(???) 								- moves projectiles of catapult type
 
-(!)	 0006D490|0046D490		-	movePeaProjectile		(???)								   - moves projectiles of pea type
+(!)	 0006D490|0046D890		-	movePeaProjectile		(???)								   - moves projectiles of pea type
 
 (!)  001312D0|005312D0    - hitArmorlessZombie(DMGTrait, DMG, zombieStruct*)                       process damage to armorless zombie
 all arguments via pushing to stack
