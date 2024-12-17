@@ -45,3 +45,9 @@ plant:
 28 (30)   - 	plantOffset			- offset on this lane in tiles (from 1 to 8)											| ???
 offset: 14C or divisor of 14C
 
+FieldTileArray[laneOffset][Lane]:
+size: 9 * 6, always
+persists through plants choices in survival
+values: 1 - defaultGrass, 3 - Water
+on not pool levels 6th row contains 2s
+can be found by planting plant, debugging at breakpoint on 00065161|00465161 and looking at edi register value
