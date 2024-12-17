@@ -22,7 +22,7 @@
       - function/variable is almost fully known, very low doubts and uncertainty  
 	  
 * if variable / functions is named undecided than... well, i hasn't decided it yet ?\_(?)_/? (it was meant to be this smile: https://memepedia.ru/wp-content/uploads/2017/05/Shrug-Emoticon-dunno-lol.jpg)
-* all hex values (and maybe all values) are presented i form hex(decimal) like: 10(16)
+* all hex values (and maybe all values), greater than 9 are presented i form hex(decimal) like: 1A(26)
 
 # CE table comments conventions:  
 
@@ -45,9 +45,9 @@ Stack:
 +4    zombieStruct2  
 -4    DMGModifier and 8  
 -C    DMGModifier  
--10   DMG  
--14   zombieStruct2  
--18   unk1  
+-10(16)   DMG  
+-14(20)   zombieStruct2  
+-18(24)   unk1  
 esp -8  
 registers:  
 eax: ???  
