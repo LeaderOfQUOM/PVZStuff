@@ -61,3 +61,5 @@ finally i found it! It contains many structures, like pointer to plants, and zom
 can be found be debugging on 0041C95C, in edx
 also, during start of the level it is an argument, and lying in stack in function 00407B79
 will describe and write it a bit later)
+
+00007D13|00407D13 contains pointer to projectiles array in its arguments and stack
