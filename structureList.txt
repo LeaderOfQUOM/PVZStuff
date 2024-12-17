@@ -59,3 +59,4 @@ can be found by planting plant, and debugging at breakpoint on 00065161|00465161
 (??)mainArray:
 finally i found it! It contains many structures, like pointer to plants, and zombies array, and much more
 can be found be debugging on 41C95C, in edx
+will describe and write it a bit later)
