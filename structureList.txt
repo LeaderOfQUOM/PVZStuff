@@ -50,4 +50,4 @@ size: 9 * 6, always
 persists through plants choices in survival
 values: 1 - defaultGrass, 3 - Water
 on not pool levels 6th row contains 2s
-can be found by planting plant, debugging at breakpoint on 00065161|00465161 it will be equeal to ed + 0x168
+can be found by planting plant, and debugging at breakpoint on 00065161|00465161 it will be equeal to ed + 0x168
