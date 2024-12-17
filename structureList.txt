@@ -39,10 +39,14 @@ Projectile:
 (?)44(68) - y						- y position 																			| float
 (!)58(88) - undecided				- trajectoryType or maybe just projectileType											| ???
 Offset
+
+
 plant:
 04 (04)   -		undecided ??? strange pointer
 1C (28)   - 	lane				- lane on which it is planted															| ???
 28 (30)   - 	plantOffset			- offset on this lane in tiles (from 1 to 8)											| ???
+54 (84)   -   timer           - plant timer, that it uses for actions, like shooting            | ???
+58 (88)   -   timerMax        - max Value of plant timer, to which it sets, when timer reaches 0 |000
 offset: 14C or divisor of 14C
 
 FieldTileArray[laneOffset][Lane]:
