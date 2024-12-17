@@ -52,9 +52,10 @@ offset: 14C or divisor of 14C
 FieldTileArray[laneOffset][Lane]:
 size: 9 * 6, always
 persists through plants choices in survival
+Has initial offset of 168(360) before actual tile values
 values: 1 - defaultGrass, 3 - Water
 on not pool levels 6th row contains 2s
-can be found by planting plant, and debugging at breakpoint on 00065161|00465161 it will be equeal to ed + 0x168
+can be found by planting plant, and debugging at breakpoint on 00065161|00465161 it will be equeal to edi + 0x168
 
 (??)mainArray:
 finally i found it! It contains many structures, like pointer to plants, and zombies array, and much more
@@ -62,4 +63,4 @@ can be found be debugging on 0041C95C, in edx
 also, during start of the level it is an argument, and lying in stack in function 00407B79
 will describe and write it a bit later)
 
-00007D13|00407D13 contains pointer to projectiles array in its arguments and stack
+00007D13|00407D13 contains pointer to array with pointer on projectiles array in its arguments and stack ()
