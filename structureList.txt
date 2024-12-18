@@ -60,6 +60,8 @@ plant:
 44(68)   -  plantMaxHP      - max HP of a plant
 54(84)   -   timer           - plant timer, that it uses for actions, like shooting            | ???
 58(88)   -   timerMax        - max Value of plant timer, to which it sets, when timer reaches 0 |000
+148(328) -  plantFlag        - used to determine last plant in plant array, in 0001C950A|0041C950 function, and maybe something else
+
 offset: 14C or divisor of 14C
 
 FieldTileArray[laneOffset][Lane]:
