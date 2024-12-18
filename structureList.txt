@@ -57,6 +57,7 @@ plant:
 24(36)   -  plantType   - type of plant
 28(40)   - 	plantOffset			- offset on this lane in tiles (from 0 to 8)											| ???
 40(64)   -  plantHP         - hp of plant
+44(68)   -  plantMaxHP      - max HP of a plant
 54(84)   -   timer           - plant timer, that it uses for actions, like shooting            | ???
 58(88)   -   timerMax        - max Value of plant timer, to which it sets, when timer reaches 0 |000
 offset: 14C or divisor of 14C
@@ -74,9 +75,9 @@ can be found by planting plant, and debugging at breakpoint on 00065161|00465161
 90(144) - zombieArray
 A0(160) - zombieCount - number of zombies, currently on the field
 AC(172) - plantArray
-B0(176) - maximal number of plants, that were on the level
+B0(176) - maxPlantCount maximal number of plants, that were on the level
 B8(184) - unk - related to plants count, and sometimes equal to BC, but i don't know what it actually is
-BC(188) - plantCount2 - number of plants, currently planted on level, not sure what difference between B8 and BC adresses
+BC(188) - plantCount - number of plants, currently planted on level, not sure what difference between B8 and BC adresses
 C8(200) - projectileArray
 
 
