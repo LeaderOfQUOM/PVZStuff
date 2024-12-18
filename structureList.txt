@@ -38,6 +38,7 @@ projectile:
 30(48)    - x 						- x position 																			| float
 (?)44(68) - y						- y position 																			| float
 (!)58(88) - undecided				- trajectoryType or maybe just projectileType											| ???
+(??)5C(92) - projType       - type of projectile 
 Offset
 
 
@@ -61,6 +62,8 @@ can be found by planting plant, and debugging at breakpoint on 00065161|00465161
 
 90(144) - zombieArray
 AC(172) - plantArray
+C8(200) - projectileArray
+
 
 finally i found it! It contains many structures, like pointer to plants, and zombies array, and much more
 can be found be debugging on 0041C95C, in edx
