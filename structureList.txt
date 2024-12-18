@@ -35,10 +35,17 @@ zombie:
 offset: ???
 
 projectile:
+4         - mainArray     - pointer, back in mainArray
+8         - x             - x position                                      | uint32
+C         - y             - y position                                      | unit32
+28        - x
 30(48)    - x 						- x position 																			| float
+38(56)    - y             - y position                                      | float
 (?)44(68) - y						- y position 																			| float
 (!)58(88) - undecided				- trajectoryType or maybe just projectileType											| ???
-(??)5C(92) - projType       - type of projectile 
+(??)5C(92) - projType       - type of projectile
+(?)60(96)  - distanceFlyied - how much distance projectile flied
+(?)F0(240) - projType       - type of projectile
 Offset
 
 
