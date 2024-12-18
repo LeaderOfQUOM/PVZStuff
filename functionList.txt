@@ -29,7 +29,9 @@ atomaric
 (??) 00016FAC|00416FAC    - undecided(???)  - closely related to drawing objects on screen.
 (??) 0011504B|0051504B    - seems to process lots of events, like planting, spawning projectile, zombie eating a plant and etc		
 (??) 0006D058|0046D058    - maybe does check of collision for projectiles
-(??) 0001C950|0041C950    - calculates real adress of last plant in array, climbing up 1 plant at a time, and looking at special flag of maxPlant on plant+148(328) (this flag can also be responsible for something else btw)
+(??) 0001C950|0041C950    - calculates real adress of last plant in array, or maybe at give id, climbing up 1 plant at a time, and looking at special flag of maxPlant on plant+148(328) (this flag can also be responsible for something else
+(??) 0001С8А0|0041C8A0    - calculates real address of last zombie in array, or maybe at given id, climbing up 1 zombie at a time, and looking at special flag of zombie on ??? (this flag can also be 
+responsible for something else btw)
 eax takes in what is drawing
 eax values: 2 - zombie, 5 - plant 14(20) - lawnmower,
 
