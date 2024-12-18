@@ -9,3 +9,20 @@ DMGTrait - trait of DMG,
 6 - freezing melon-pult
 9 - time based DMG on headless
 33(21) - DMG brom bottom like from spikes
+
+projType - type of flying projectile:
+0 - pea
+1 - snow pea
+2 - cabbage
+3 - melon
+4 - shroom spore
+5 - freeze melon
+(??)6 - um... invisible fire pea?...
+7 - star
+8 - cacti shot
+9 - zombie catapult shot
+10 - small corn
+11 - big corn
+12 - butter
+13 - pea, again?????
+14 - crashes
