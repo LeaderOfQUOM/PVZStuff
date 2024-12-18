@@ -51,9 +51,11 @@ Offset
 
 plant:
 04(04)   -		undecided ??? strange pointer
-1C(28)   - 	lane				- lane on which it is planted															| ???
-24(36)
-28(40)   - 	plantOffset			- offset on this lane in tiles (from 1 to 8)											| ???
+08(08)   -  x      - x offset of flower, from its position on field (note, that is doesn't change its hitbox, and effective position, it will still shoot on the same lane)
+08(08)   -  y      - y offset of flower, from its position on field (note, that is doesn't change its hitbox, and effective position, it will still shoot on the same lane)
+1C(28)   - 	lane				- lane on which it is planted (from 0 to 5)														| ???
+24(36)   -  plantType   - type of plant
+28(40)   - 	plantOffset			- offset on this lane in tiles (from 0 to 8)											| ???
 40(64)   -  plantHP         - hp of plant
 54(84)   -   timer           - plant timer, that it uses for actions, like shooting            | ???
 58(88)   -   timerMax        - max Value of plant timer, to which it sets, when timer reaches 0 |000
