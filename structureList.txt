@@ -43,7 +43,7 @@ C         - y             - y position                                      | un
 38(56)    - y             - y position                                      | float
 (?)44(68) - y						- y position 																			| float
 (!)58(88) - undecided				- trajectoryType or maybe just projectileType											| ???
-(??)5C(92) - projType       - type of projectile
+(??)5C(92) - unk            - don't know, maybe it even doesn't exist
 (?)60(96)  - distanceFlyied - how much distance projectile flied
 (?)F0(240) - projType       - type of projectile
 Offset
